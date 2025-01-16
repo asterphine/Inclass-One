@@ -44,7 +44,7 @@ class Card:
     def __gt__(self, other_card):
         if self.face > other_card.get_face():
             return True
-        elif (self.face == other_card.get_face()):
+        elif (self.face != other_card.get_face()):
             return self.suit > other_card.get_suit()
         else:
             return False
