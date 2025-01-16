@@ -19,7 +19,7 @@ class Card:
         global face, suit
         if (the_face in face and the_suit in suit):
             self.face = the_suit
-            self.suit = the_suit
+            self.suit = the_face
         else:
             #print("Illegal card value, creating a 2 of Clubs")
             self.face = -1
